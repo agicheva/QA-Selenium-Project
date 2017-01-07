@@ -139,14 +139,14 @@ public class TestRegister {
 	}
 
 	/**
-	 * Generates different usernames staring with "login_username_12" and finishing with
+	 * Generates different usernames staring with "john_doe_1" and finishing with
 	 * random number. This is done so that every time we run the tests we don't
 	 * register the same user because the tests won't pass after the second run.
 	 *
 	 * @return The generated email as String.
 	 */
 	private String generateUsername() {
-		return "login_username_12" + generateRandonNumber();
+		return "john_doe_1" + generateRandonNumber() + generateRandonNumber() + generateRandonNumber();
 	}
 
 	/**
