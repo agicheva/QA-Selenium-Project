@@ -77,7 +77,8 @@ public class TestSearch {
 	public Object[][] correctSearch() {
 		return new Object[][] { 
 			{ "Programming", "" }, 
-			{ "Programming", "Beginning Active Server Pages 3.0" } 
+			{ "Programming", "Beginning Active Server Pages 3.0" },
+			{ "Databases", ""}
 		};
 	}
 
@@ -85,6 +86,8 @@ public class TestSearch {
 	public Object[][] incorrectSearch() {
 		return new Object[][] { 
 			{ "", "admin" }, // wrong name of book
+			{ "Databases", "ball" },
+			{ "Programming", "book" }
 		};
 	}
 }
